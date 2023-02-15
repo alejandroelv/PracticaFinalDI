@@ -1,0 +1,15 @@
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.csproj.AssemblyReference.cache
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.Properties.Resources.resources
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.Slideshow.resources
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.csproj.GenerateResource.cache
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.csproj.CoreCompileInputs.cache
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\bin\Debug\PuntoInformacion.exe.config
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\bin\Debug\PuntoInformacion.exe
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\bin\Debug\PuntoInformacion.pdb
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.exe
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.pdb
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.Form1.resources
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.PantallaInicio.resources
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.PantallaInformacion.resources
+C:\Users\lordo\source\repos\PuntoInformacion\PuntoInformacion\obj\Debug\PuntoInformacion.PantallaOfertaEducativa.resources
