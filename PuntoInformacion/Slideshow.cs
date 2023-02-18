@@ -20,6 +20,9 @@ namespace PuntoInformacion
         public Slideshow()
         {
             InitializeComponent();
+            this.BackColor = Color.Transparent;
+            slider.Controls.Add(pictureBoxBackward);
+            slider.Controls.Add(pictureBoxFordward);
             listaImagenes = new List<Image>();
             indice = 0;
             slider.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -28,17 +31,15 @@ namespace PuntoInformacion
         public Slideshow(String carpetaFotos)
         {
             InitializeComponent();
+            this.BackColor = Color.Transparent;
+            slider.Controls.Add(pictureBoxBackward);
+            slider.Controls.Add(pictureBoxFordward);
             listaImagenes = new List<Image>();
             indice = 0;
             slider.SizeMode = PictureBoxSizeMode.StretchImage;
             this.carpetaFotos = new DirectoryInfo(carpetaFotos);
             cargarFotos();
             slider.Image = listaImagenes[0];
-        }
-
-        private void Slideshow_Load(object sender, EventArgs e)
-        {
-
         }
 
         public void setCarpetaFotos(DirectoryInfo carpetaFotos)

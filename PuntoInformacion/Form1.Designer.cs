@@ -32,13 +32,15 @@
             this.buttonInicio = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonLugaresCercanos = new System.Windows.Forms.Button();
+            this.buttonSugerencias = new System.Windows.Forms.Button();
             this.buttonContacto = new System.Windows.Forms.Button();
             this.pictureBoxSalir = new System.Windows.Forms.PictureBox();
-            this.pantallaInformacion1 = new PuntoInformacion.PantallaInformacion();
+            this.buttonCalendario = new System.Windows.Forms.Button();
+            this.pantallaLugaresCercanos1 = new PuntoInformacion.PantallaLugaresCercanos();
+            this.pantallaSugerencias1 = new PuntoInformacion.PantallaSugerencias();
             this.pantallaInicio1 = new PuntoInformacion.PantallaInicio();
+            this.pantallaInformacion1 = new PuntoInformacion.PantallaInformacion();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSalir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(195, 560);
+            this.splitter1.Size = new System.Drawing.Size(195, 544);
             this.splitter1.TabIndex = 2;
             this.splitter1.TabStop = false;
             // 
@@ -73,7 +75,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 153);
+            this.button2.Location = new System.Drawing.Point(0, 102);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 50);
             this.button2.TabIndex = 4;
@@ -87,54 +89,42 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 255);
+            this.button3.Location = new System.Drawing.Point(0, 51);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(195, 50);
             this.button3.TabIndex = 5;
             this.button3.Text = "Equipo directivo";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonLugaresCercanos
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 102);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(195, 50);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Oferta educativa";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonLugaresCercanos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
+            this.buttonLugaresCercanos.FlatAppearance.BorderSize = 0;
+            this.buttonLugaresCercanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLugaresCercanos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLugaresCercanos.ForeColor = System.Drawing.Color.White;
+            this.buttonLugaresCercanos.Location = new System.Drawing.Point(0, 204);
+            this.buttonLugaresCercanos.Name = "buttonLugaresCercanos";
+            this.buttonLugaresCercanos.Size = new System.Drawing.Size(195, 50);
+            this.buttonLugaresCercanos.TabIndex = 7;
+            this.buttonLugaresCercanos.Text = "Lugares cercanos";
+            this.buttonLugaresCercanos.UseVisualStyleBackColor = false;
+            this.buttonLugaresCercanos.Click += new System.EventHandler(this.buttonLugaresCercanos_Click);
             // 
-            // button5
+            // buttonSugerencias
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 204);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(195, 50);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Lugares de interés";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 306);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(195, 50);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Sugerencias";
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonSugerencias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
+            this.buttonSugerencias.FlatAppearance.BorderSize = 0;
+            this.buttonSugerencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSugerencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSugerencias.ForeColor = System.Drawing.Color.White;
+            this.buttonSugerencias.Location = new System.Drawing.Point(0, 306);
+            this.buttonSugerencias.Name = "buttonSugerencias";
+            this.buttonSugerencias.Size = new System.Drawing.Size(195, 50);
+            this.buttonSugerencias.TabIndex = 8;
+            this.buttonSugerencias.Text = "Sugerencias";
+            this.buttonSugerencias.UseVisualStyleBackColor = false;
+            this.buttonSugerencias.Click += new System.EventHandler(this.buttonSugerencias_Click);
             // 
             // buttonContacto
             // 
@@ -143,7 +133,7 @@
             this.buttonContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonContacto.ForeColor = System.Drawing.Color.White;
-            this.buttonContacto.Location = new System.Drawing.Point(0, 51);
+            this.buttonContacto.Location = new System.Drawing.Point(0, 255);
             this.buttonContacto.Name = "buttonContacto";
             this.buttonContacto.Size = new System.Drawing.Size(195, 50);
             this.buttonContacto.TabIndex = 9;
@@ -156,13 +146,52 @@
             this.pictureBoxSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
             this.pictureBoxSalir.ErrorImage = global::PuntoInformacion.Properties.Resources.logout;
             this.pictureBoxSalir.Image = global::PuntoInformacion.Properties.Resources.logout;
-            this.pictureBoxSalir.Location = new System.Drawing.Point(12, 508);
+            this.pictureBoxSalir.Location = new System.Drawing.Point(12, 499);
             this.pictureBoxSalir.Name = "pictureBoxSalir";
             this.pictureBoxSalir.Size = new System.Drawing.Size(34, 37);
             this.pictureBoxSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSalir.TabIndex = 10;
             this.pictureBoxSalir.TabStop = false;
             this.pictureBoxSalir.Click += new System.EventHandler(this.pictureBoxSalir_Click);
+            // 
+            // buttonCalendario
+            // 
+            this.buttonCalendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
+            this.buttonCalendario.FlatAppearance.BorderSize = 0;
+            this.buttonCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCalendario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalendario.ForeColor = System.Drawing.Color.White;
+            this.buttonCalendario.Location = new System.Drawing.Point(0, 153);
+            this.buttonCalendario.Name = "buttonCalendario";
+            this.buttonCalendario.Size = new System.Drawing.Size(195, 50);
+            this.buttonCalendario.TabIndex = 15;
+            this.buttonCalendario.Text = "Calendario escolar";
+            this.buttonCalendario.UseVisualStyleBackColor = false;
+            // 
+            // pantallaLugaresCercanos1
+            // 
+            this.pantallaLugaresCercanos1.Location = new System.Drawing.Point(219, 21);
+            this.pantallaLugaresCercanos1.Name = "pantallaLugaresCercanos1";
+            this.pantallaLugaresCercanos1.Size = new System.Drawing.Size(625, 476);
+            this.pantallaLugaresCercanos1.TabIndex = 14;
+            this.pantallaLugaresCercanos1.Visible = false;
+            // 
+            // pantallaSugerencias1
+            // 
+            this.pantallaSugerencias1.Location = new System.Drawing.Point(213, 21);
+            this.pantallaSugerencias1.Name = "pantallaSugerencias1";
+            this.pantallaSugerencias1.Size = new System.Drawing.Size(631, 486);
+            this.pantallaSugerencias1.TabIndex = 13;
+            this.pantallaSugerencias1.Visible = false;
+            // 
+            // pantallaInicio1
+            // 
+            this.pantallaInicio1.AutoScroll = true;
+            this.pantallaInicio1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pantallaInicio1.Location = new System.Drawing.Point(213, 0);
+            this.pantallaInicio1.Name = "pantallaInicio1";
+            this.pantallaInicio1.Size = new System.Drawing.Size(660, 544);
+            this.pantallaInicio1.TabIndex = 11;
             // 
             // pantallaInformacion1
             // 
@@ -172,26 +201,20 @@
             this.pantallaInformacion1.TabIndex = 12;
             this.pantallaInformacion1.Visible = false;
             // 
-            // pantallaInicio1
-            // 
-            this.pantallaInicio1.AutoScroll = true;
-            this.pantallaInicio1.Location = new System.Drawing.Point(214, 0);
-            this.pantallaInicio1.Name = "pantallaInicio1";
-            this.pantallaInicio1.Size = new System.Drawing.Size(722, 560);
-            this.pantallaInicio1.TabIndex = 11;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(937, 560);
+            this.ClientSize = new System.Drawing.Size(873, 544);
+            this.Controls.Add(this.buttonCalendario);
+            this.Controls.Add(this.pantallaLugaresCercanos1);
+            this.Controls.Add(this.pantallaSugerencias1);
             this.Controls.Add(this.pantallaInicio1);
             this.Controls.Add(this.pictureBoxSalir);
             this.Controls.Add(this.buttonContacto);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonSugerencias);
+            this.Controls.Add(this.buttonLugaresCercanos);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonInicio);
@@ -199,7 +222,6 @@
             this.Controls.Add(this.pantallaInformacion1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSalir)).EndInit();
@@ -212,13 +234,15 @@
         private System.Windows.Forms.Button buttonInicio;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonLugaresCercanos;
+        private System.Windows.Forms.Button buttonSugerencias;
         private System.Windows.Forms.Button buttonContacto;
         private System.Windows.Forms.PictureBox pictureBoxSalir;
         private PantallaInicio pantallaInicio1;
         private PantallaInformacion pantallaInformacion1;
+        private PantallaSugerencias pantallaSugerencias1;
+        private PantallaLugaresCercanos pantallaLugaresCercanos1;
+        private System.Windows.Forms.Button buttonCalendario;
     }
 }
 

@@ -71,6 +71,16 @@ namespace PuntoInformacion.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Calendario_2022_2023 {
+            get {
+                object obj = ResourceManager.GetObject("Calendario_2022_2023", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap directions {
@@ -156,6 +166,26 @@ namespace PuntoInformacion.Properties {
         internal static System.Drawing.Bitmap mail {
             get {
                 object obj = ResourceManager.GetObject("mail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mail_correct {
+            get {
+                object obj = ResourceManager.GetObject("mail_correct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mail_error {
+            get {
+                object obj = ResourceManager.GetObject("mail_error", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

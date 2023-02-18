@@ -54,5 +54,19 @@ namespace PuntoInformacion
             this.pantallaActiva = this.pantallaInformacion1;
             mostrarPantallaActiva();
         }
+
+        private void buttonSugerencias_Click(object sender, EventArgs e)
+        {
+            ocultarPantallaActiva();
+            this.pantallaActiva = this.pantallaSugerencias1;
+            mostrarPantallaActiva();
+        }
+
+        private void buttonLugaresCercanos_Click(object sender, EventArgs e)
+        {
+            ocultarPantallaActiva();
+            this.pantallaActiva = this.pantallaLugaresCercanos1;
+            mostrarPantallaActiva();
+        }
     }
 }

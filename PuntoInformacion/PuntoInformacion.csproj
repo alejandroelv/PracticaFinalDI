@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GMap.NET.Core, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +61,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaCalendario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PantallaCalendario.Designer.cs">
+      <DependentUpon>PantallaCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaLugaresCercanos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PantallaLugaresCercanos.Designer.cs">
+      <DependentUpon>PantallaLugaresCercanos.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaInformacion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,6 +91,12 @@
     <Compile Include="PantallaOfertaEducativa.Designer.cs">
       <DependentUpon>PantallaOfertaEducativa.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaSugerencias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PantallaSugerencias.Designer.cs">
+      <DependentUpon>PantallaSugerencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Slideshow.cs">
@@ -81,6 +108,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaCalendario.resx">
+      <DependentUpon>PantallaCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaLugaresCercanos.resx">
+      <DependentUpon>PantallaLugaresCercanos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaInformacion.resx">
       <DependentUpon>PantallaInformacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaOfertaEducativa.resx">
       <DependentUpon>PantallaOfertaEducativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaSugerencias.resx">
+      <DependentUpon>PantallaSugerencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,6 +139,7 @@
     <EmbeddedResource Include="Slideshow.resx">
       <DependentUpon>Slideshow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,6 +157,7 @@
     <None Include="Resources\backward-arrow.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Calendario_2022_2023.pdf" />
     <None Include="Resources\forward-arrow.png" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +192,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\directions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-correct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-error.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
