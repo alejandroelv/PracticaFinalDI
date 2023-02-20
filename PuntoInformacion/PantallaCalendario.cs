@@ -1,5 +1,4 @@
-﻿using PdfiumViewer;
-using PuntoInformacion.Properties;
+﻿using PuntoInformacion.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,20 +15,22 @@ namespace PuntoInformacion
 {
     public partial class PantallaCalendario : UserControl
     {
-        String filePath;
+        String filepath;
         public PantallaCalendario()
         {
             InitializeComponent();
-            this.filePath = "C:\\Users\\Usuario\\Downloads\\Calendario_2022_2023.pdf";
             cargarPDF();
         }
 
-        private void cargarPDF()
+        private void leerRuta()
         {
-            byte[] bytes = System.IO.File.ReadAllBytes(filePath);
-            var stream = new MemoryStream(bytes);
-            PdfDocument pdf = PdfDocument.Load(stream);
-            pdfViewer1.Document = pdf;
+            string[] lines = File.ReadAllLines("../../rutaCalendario.txt");
+            filepath = lines[0];
+        }
+        public void cargarPDF()
+        {
+            leerRuta();
+            axAcroPDF1.src = filepath;
         }
     }
 }

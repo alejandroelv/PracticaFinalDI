@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.buttonInicio = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -35,12 +36,17 @@
             this.buttonLugaresCercanos = new System.Windows.Forms.Button();
             this.buttonSugerencias = new System.Windows.Forms.Button();
             this.buttonContacto = new System.Windows.Forms.Button();
-            this.pictureBoxSalir = new System.Windows.Forms.PictureBox();
             this.buttonCalendario = new System.Windows.Forms.Button();
-            this.pantallaLugaresCercanos1 = new PuntoInformacion.PantallaLugaresCercanos();
-            this.pantallaSugerencias1 = new PuntoInformacion.PantallaSugerencias();
+            this.pantallaCalendario1 = new PuntoInformacion.PantallaCalendario();
             this.pantallaInicio1 = new PuntoInformacion.PantallaInicio();
             this.pantallaInformacion1 = new PuntoInformacion.PantallaInformacion();
+            this.pantallaLugaresCercanos1 = new PuntoInformacion.PantallaLugaresCercanos();
+            this.pantallaSugerencias1 = new PuntoInformacion.PantallaSugerencias();
+            this.pictureBoxLoginAdmin = new System.Windows.Forms.PictureBox();
+            this.pictureBoxConfiguracion = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSalir = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginAdmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfiguracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSalir)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,19 +147,6 @@
             this.buttonContacto.UseVisualStyleBackColor = false;
             this.buttonContacto.Click += new System.EventHandler(this.buttonContacto_Click);
             // 
-            // pictureBoxSalir
-            // 
-            this.pictureBoxSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
-            this.pictureBoxSalir.ErrorImage = global::PuntoInformacion.Properties.Resources.logout;
-            this.pictureBoxSalir.Image = global::PuntoInformacion.Properties.Resources.logout;
-            this.pictureBoxSalir.Location = new System.Drawing.Point(12, 499);
-            this.pictureBoxSalir.Name = "pictureBoxSalir";
-            this.pictureBoxSalir.Size = new System.Drawing.Size(34, 37);
-            this.pictureBoxSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSalir.TabIndex = 10;
-            this.pictureBoxSalir.TabStop = false;
-            this.pictureBoxSalir.Click += new System.EventHandler(this.pictureBoxSalir_Click);
-            // 
             // buttonCalendario
             // 
             this.buttonCalendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
@@ -167,22 +160,15 @@
             this.buttonCalendario.TabIndex = 15;
             this.buttonCalendario.Text = "Calendario escolar";
             this.buttonCalendario.UseVisualStyleBackColor = false;
+            this.buttonCalendario.Click += new System.EventHandler(this.buttonCalendario_Click);
             // 
-            // pantallaLugaresCercanos1
+            // pantallaCalendario1
             // 
-            this.pantallaLugaresCercanos1.Location = new System.Drawing.Point(219, 21);
-            this.pantallaLugaresCercanos1.Name = "pantallaLugaresCercanos1";
-            this.pantallaLugaresCercanos1.Size = new System.Drawing.Size(625, 476);
-            this.pantallaLugaresCercanos1.TabIndex = 14;
-            this.pantallaLugaresCercanos1.Visible = false;
-            // 
-            // pantallaSugerencias1
-            // 
-            this.pantallaSugerencias1.Location = new System.Drawing.Point(213, 21);
-            this.pantallaSugerencias1.Name = "pantallaSugerencias1";
-            this.pantallaSugerencias1.Size = new System.Drawing.Size(631, 486);
-            this.pantallaSugerencias1.TabIndex = 13;
-            this.pantallaSugerencias1.Visible = false;
+            this.pantallaCalendario1.Location = new System.Drawing.Point(201, 12);
+            this.pantallaCalendario1.Name = "pantallaCalendario1";
+            this.pantallaCalendario1.Size = new System.Drawing.Size(653, 514);
+            this.pantallaCalendario1.TabIndex = 16;
+            this.pantallaCalendario1.Visible = false;
             // 
             // pantallaInicio1
             // 
@@ -201,15 +187,73 @@
             this.pantallaInformacion1.TabIndex = 12;
             this.pantallaInformacion1.Visible = false;
             // 
+            // pantallaLugaresCercanos1
+            // 
+            this.pantallaLugaresCercanos1.Location = new System.Drawing.Point(219, 21);
+            this.pantallaLugaresCercanos1.Name = "pantallaLugaresCercanos1";
+            this.pantallaLugaresCercanos1.Size = new System.Drawing.Size(625, 492);
+            this.pantallaLugaresCercanos1.TabIndex = 14;
+            this.pantallaLugaresCercanos1.Visible = false;
+            // 
+            // pantallaSugerencias1
+            // 
+            this.pantallaSugerencias1.Location = new System.Drawing.Point(213, 21);
+            this.pantallaSugerencias1.Name = "pantallaSugerencias1";
+            this.pantallaSugerencias1.Size = new System.Drawing.Size(631, 486);
+            this.pantallaSugerencias1.TabIndex = 13;
+            this.pantallaSugerencias1.Visible = false;
+            // 
+            // pictureBoxLoginAdmin
+            // 
+            this.pictureBoxLoginAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
+            this.pictureBoxLoginAdmin.ErrorImage = global::PuntoInformacion.Properties.Resources.user;
+            this.pictureBoxLoginAdmin.Image = global::PuntoInformacion.Properties.Resources.user;
+            this.pictureBoxLoginAdmin.Location = new System.Drawing.Point(62, 498);
+            this.pictureBoxLoginAdmin.Name = "pictureBoxLoginAdmin";
+            this.pictureBoxLoginAdmin.Size = new System.Drawing.Size(34, 37);
+            this.pictureBoxLoginAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLoginAdmin.TabIndex = 18;
+            this.pictureBoxLoginAdmin.TabStop = false;
+            this.pictureBoxLoginAdmin.Click += new System.EventHandler(this.pictureBoxLoginAdmin_Click);
+            // 
+            // pictureBoxConfiguracion
+            // 
+            this.pictureBoxConfiguracion.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBoxConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
+            this.pictureBoxConfiguracion.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxConfiguracion.ErrorImage")));
+            this.pictureBoxConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxConfiguracion.Image")));
+            this.pictureBoxConfiguracion.Location = new System.Drawing.Point(62, 498);
+            this.pictureBoxConfiguracion.Name = "pictureBoxConfiguracion";
+            this.pictureBoxConfiguracion.Size = new System.Drawing.Size(37, 37);
+            this.pictureBoxConfiguracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxConfiguracion.TabIndex = 17;
+            this.pictureBoxConfiguracion.TabStop = false;
+            this.pictureBoxConfiguracion.Visible = false;
+            this.pictureBoxConfiguracion.Click += new System.EventHandler(this.pictureBoxConfiguracion_Click);
+            // 
+            // pictureBoxSalir
+            // 
+            this.pictureBoxSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
+            this.pictureBoxSalir.ErrorImage = global::PuntoInformacion.Properties.Resources.logout;
+            this.pictureBoxSalir.Image = global::PuntoInformacion.Properties.Resources.logout;
+            this.pictureBoxSalir.Location = new System.Drawing.Point(12, 499);
+            this.pictureBoxSalir.Name = "pictureBoxSalir";
+            this.pictureBoxSalir.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSalir.TabIndex = 10;
+            this.pictureBoxSalir.TabStop = false;
+            this.pictureBoxSalir.Click += new System.EventHandler(this.pictureBoxSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(873, 544);
+            this.Controls.Add(this.pictureBoxLoginAdmin);
+            this.Controls.Add(this.pictureBoxConfiguracion);
+            this.Controls.Add(this.pantallaCalendario1);
             this.Controls.Add(this.buttonCalendario);
-            this.Controls.Add(this.pantallaLugaresCercanos1);
-            this.Controls.Add(this.pantallaSugerencias1);
             this.Controls.Add(this.pantallaInicio1);
             this.Controls.Add(this.pictureBoxSalir);
             this.Controls.Add(this.buttonContacto);
@@ -218,12 +262,17 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonInicio);
-            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.pantallaInformacion1);
+            this.Controls.Add(this.pantallaLugaresCercanos1);
+            this.Controls.Add(this.pantallaSugerencias1);
+            this.Controls.Add(this.splitter1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfiguracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSalir)).EndInit();
             this.ResumeLayout(false);
 
@@ -243,6 +292,9 @@
         private PantallaSugerencias pantallaSugerencias1;
         private PantallaLugaresCercanos pantallaLugaresCercanos1;
         private System.Windows.Forms.Button buttonCalendario;
+        private PantallaCalendario pantallaCalendario1;
+        private System.Windows.Forms.PictureBox pictureBoxConfiguracion;
+        private System.Windows.Forms.PictureBox pictureBoxLoginAdmin;
     }
 }
 

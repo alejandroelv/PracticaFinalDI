@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaCalendario));
             this.label1 = new System.Windows.Forms.Label();
-            this.pdfViewer1 = new PdfiumViewer.PdfViewer();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -42,21 +44,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Calendario escolar";
             // 
-            // pdfViewer1
+            // axAcroPDF1
             // 
-            this.pdfViewer1.Location = new System.Drawing.Point(27, 77);
-            this.pdfViewer1.Name = "pdfViewer1";
-            this.pdfViewer1.Size = new System.Drawing.Size(588, 415);
-            this.pdfViewer1.TabIndex = 1;
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(71, 100);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(505, 381);
+            this.axAcroPDF1.TabIndex = 1;
             // 
             // PantallaCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pdfViewer1);
+            this.Controls.Add(this.axAcroPDF1);
             this.Controls.Add(this.label1);
             this.Name = "PantallaCalendario";
             this.Size = new System.Drawing.Size(653, 514);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -65,6 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private PdfiumViewer.PdfViewer pdfViewer1;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
     }
 }
