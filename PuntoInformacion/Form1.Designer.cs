@@ -31,20 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.buttonInicio = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonPlanos = new System.Windows.Forms.Button();
+            this.buttonEquipo = new System.Windows.Forms.Button();
             this.buttonLugaresCercanos = new System.Windows.Forms.Button();
             this.buttonSugerencias = new System.Windows.Forms.Button();
             this.buttonContacto = new System.Windows.Forms.Button();
             this.buttonCalendario = new System.Windows.Forms.Button();
-            this.pantallaCalendario1 = new PuntoInformacion.PantallaCalendario();
+            this.pictureBoxLoginAdmin = new System.Windows.Forms.PictureBox();
+            this.pictureBoxConfiguracion = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSalir = new System.Windows.Forms.PictureBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.pantallaInicio1 = new PuntoInformacion.PantallaInicio();
             this.pantallaInformacion1 = new PuntoInformacion.PantallaInformacion();
             this.pantallaLugaresCercanos1 = new PuntoInformacion.PantallaLugaresCercanos();
             this.pantallaSugerencias1 = new PuntoInformacion.PantallaSugerencias();
-            this.pictureBoxLoginAdmin = new System.Windows.Forms.PictureBox();
-            this.pictureBoxConfiguracion = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSalir = new System.Windows.Forms.PictureBox();
+            this.pantallaCalendario1 = new PuntoInformacion.PantallaCalendario();
+            this.pantallaPlanos1 = new PuntoInformacion.PantallaPlanos();
+            this.pantallaEquipo1 = new PuntoInformacion.PantallaEquipo();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoginAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfiguracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSalir)).BeginInit();
@@ -74,33 +77,35 @@
             this.buttonInicio.UseVisualStyleBackColor = false;
             this.buttonInicio.Click += new System.EventHandler(this.buttonInicio_Click);
             // 
-            // button2
+            // buttonPlanos
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 102);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 50);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Plano del centro";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonPlanos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
+            this.buttonPlanos.FlatAppearance.BorderSize = 0;
+            this.buttonPlanos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPlanos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPlanos.ForeColor = System.Drawing.Color.White;
+            this.buttonPlanos.Location = new System.Drawing.Point(0, 102);
+            this.buttonPlanos.Name = "buttonPlanos";
+            this.buttonPlanos.Size = new System.Drawing.Size(195, 50);
+            this.buttonPlanos.TabIndex = 4;
+            this.buttonPlanos.Text = "Plano del centro";
+            this.buttonPlanos.UseVisualStyleBackColor = false;
+            this.buttonPlanos.Click += new System.EventHandler(this.buttonPlanos_Click);
             // 
-            // button3
+            // buttonEquipo
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 51);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(195, 50);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Equipo directivo";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonEquipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(167)))), ((int)(((byte)(221)))));
+            this.buttonEquipo.FlatAppearance.BorderSize = 0;
+            this.buttonEquipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEquipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEquipo.ForeColor = System.Drawing.Color.White;
+            this.buttonEquipo.Location = new System.Drawing.Point(0, 51);
+            this.buttonEquipo.Name = "buttonEquipo";
+            this.buttonEquipo.Size = new System.Drawing.Size(195, 50);
+            this.buttonEquipo.TabIndex = 5;
+            this.buttonEquipo.Text = "Equipo directivo";
+            this.buttonEquipo.UseVisualStyleBackColor = false;
+            this.buttonEquipo.Click += new System.EventHandler(this.buttonEquipo_Click);
             // 
             // buttonLugaresCercanos
             // 
@@ -162,47 +167,6 @@
             this.buttonCalendario.UseVisualStyleBackColor = false;
             this.buttonCalendario.Click += new System.EventHandler(this.buttonCalendario_Click);
             // 
-            // pantallaCalendario1
-            // 
-            this.pantallaCalendario1.Location = new System.Drawing.Point(201, 12);
-            this.pantallaCalendario1.Name = "pantallaCalendario1";
-            this.pantallaCalendario1.Size = new System.Drawing.Size(653, 514);
-            this.pantallaCalendario1.TabIndex = 16;
-            this.pantallaCalendario1.Visible = false;
-            // 
-            // pantallaInicio1
-            // 
-            this.pantallaInicio1.AutoScroll = true;
-            this.pantallaInicio1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pantallaInicio1.Location = new System.Drawing.Point(213, 0);
-            this.pantallaInicio1.Name = "pantallaInicio1";
-            this.pantallaInicio1.Size = new System.Drawing.Size(660, 544);
-            this.pantallaInicio1.TabIndex = 11;
-            // 
-            // pantallaInformacion1
-            // 
-            this.pantallaInformacion1.Location = new System.Drawing.Point(280, 0);
-            this.pantallaInformacion1.Name = "pantallaInformacion1";
-            this.pantallaInformacion1.Size = new System.Drawing.Size(600, 560);
-            this.pantallaInformacion1.TabIndex = 12;
-            this.pantallaInformacion1.Visible = false;
-            // 
-            // pantallaLugaresCercanos1
-            // 
-            this.pantallaLugaresCercanos1.Location = new System.Drawing.Point(219, 21);
-            this.pantallaLugaresCercanos1.Name = "pantallaLugaresCercanos1";
-            this.pantallaLugaresCercanos1.Size = new System.Drawing.Size(625, 492);
-            this.pantallaLugaresCercanos1.TabIndex = 14;
-            this.pantallaLugaresCercanos1.Visible = false;
-            // 
-            // pantallaSugerencias1
-            // 
-            this.pantallaSugerencias1.Location = new System.Drawing.Point(213, 21);
-            this.pantallaSugerencias1.Name = "pantallaSugerencias1";
-            this.pantallaSugerencias1.Size = new System.Drawing.Size(631, 486);
-            this.pantallaSugerencias1.TabIndex = 13;
-            this.pantallaSugerencias1.Visible = false;
-            // 
             // pictureBoxLoginAdmin
             // 
             this.pictureBoxLoginAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(109)))), ((int)(((byte)(153)))));
@@ -244,6 +208,69 @@
             this.pictureBoxSalir.TabStop = false;
             this.pictureBoxSalir.Click += new System.EventHandler(this.pictureBoxSalir_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "";
+            // 
+            // pantallaInicio1
+            // 
+            this.pantallaInicio1.AutoScroll = true;
+            this.pantallaInicio1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pantallaInicio1.Location = new System.Drawing.Point(213, 0);
+            this.pantallaInicio1.Name = "pantallaInicio1";
+            this.pantallaInicio1.Size = new System.Drawing.Size(660, 544);
+            this.pantallaInicio1.TabIndex = 11;
+            // 
+            // pantallaInformacion1
+            // 
+            this.pantallaInformacion1.Location = new System.Drawing.Point(280, 0);
+            this.pantallaInformacion1.Name = "pantallaInformacion1";
+            this.pantallaInformacion1.Size = new System.Drawing.Size(600, 560);
+            this.pantallaInformacion1.TabIndex = 12;
+            this.pantallaInformacion1.Visible = false;
+            // 
+            // pantallaLugaresCercanos1
+            // 
+            this.pantallaLugaresCercanos1.Location = new System.Drawing.Point(219, 21);
+            this.pantallaLugaresCercanos1.Name = "pantallaLugaresCercanos1";
+            this.pantallaLugaresCercanos1.Size = new System.Drawing.Size(625, 492);
+            this.pantallaLugaresCercanos1.TabIndex = 14;
+            this.pantallaLugaresCercanos1.Visible = false;
+            // 
+            // pantallaSugerencias1
+            // 
+            this.pantallaSugerencias1.Location = new System.Drawing.Point(213, 21);
+            this.pantallaSugerencias1.Name = "pantallaSugerencias1";
+            this.pantallaSugerencias1.Size = new System.Drawing.Size(631, 486);
+            this.pantallaSugerencias1.TabIndex = 13;
+            this.pantallaSugerencias1.Visible = false;
+            // 
+            // pantallaCalendario1
+            // 
+            this.pantallaCalendario1.archivoRuta = null;
+            this.pantallaCalendario1.Enabled = false;
+            this.pantallaCalendario1.Location = new System.Drawing.Point(207, 8);
+            this.pantallaCalendario1.Name = "pantallaCalendario1";
+            this.pantallaCalendario1.Size = new System.Drawing.Size(653, 514);
+            this.pantallaCalendario1.TabIndex = 20;
+            this.pantallaCalendario1.Visible = false;
+            // 
+            // pantallaPlanos1
+            // 
+            this.pantallaPlanos1.Location = new System.Drawing.Point(191, 2);
+            this.pantallaPlanos1.Name = "pantallaPlanos1";
+            this.pantallaPlanos1.Size = new System.Drawing.Size(682, 544);
+            this.pantallaPlanos1.TabIndex = 19;
+            this.pantallaPlanos1.Visible = false;
+            // 
+            // pantallaEquipo1
+            // 
+            this.pantallaEquipo1.Location = new System.Drawing.Point(191, 0);
+            this.pantallaEquipo1.Name = "pantallaEquipo1";
+            this.pantallaEquipo1.Size = new System.Drawing.Size(682, 544);
+            this.pantallaEquipo1.TabIndex = 21;
+            this.pantallaEquipo1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,21 +279,24 @@
             this.ClientSize = new System.Drawing.Size(873, 544);
             this.Controls.Add(this.pictureBoxLoginAdmin);
             this.Controls.Add(this.pictureBoxConfiguracion);
-            this.Controls.Add(this.pantallaCalendario1);
             this.Controls.Add(this.buttonCalendario);
             this.Controls.Add(this.pantallaInicio1);
             this.Controls.Add(this.pictureBoxSalir);
             this.Controls.Add(this.buttonContacto);
             this.Controls.Add(this.buttonSugerencias);
             this.Controls.Add(this.buttonLugaresCercanos);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonEquipo);
+            this.Controls.Add(this.buttonPlanos);
             this.Controls.Add(this.buttonInicio);
             this.Controls.Add(this.pantallaInformacion1);
             this.Controls.Add(this.pantallaLugaresCercanos1);
             this.Controls.Add(this.pantallaSugerencias1);
             this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.pantallaCalendario1);
+            this.Controls.Add(this.pantallaPlanos1);
+            this.Controls.Add(this.pantallaEquipo1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -281,8 +311,8 @@
         #endregion
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Button buttonInicio;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonPlanos;
+        private System.Windows.Forms.Button buttonEquipo;
         private System.Windows.Forms.Button buttonLugaresCercanos;
         private System.Windows.Forms.Button buttonSugerencias;
         private System.Windows.Forms.Button buttonContacto;
@@ -292,9 +322,12 @@
         private PantallaSugerencias pantallaSugerencias1;
         private PantallaLugaresCercanos pantallaLugaresCercanos1;
         private System.Windows.Forms.Button buttonCalendario;
-        private PantallaCalendario pantallaCalendario1;
         private System.Windows.Forms.PictureBox pictureBoxConfiguracion;
         private System.Windows.Forms.PictureBox pictureBoxLoginAdmin;
+        private PantallaPlanos pantallaPlanos1;
+        private PantallaCalendario pantallaCalendario1;
+        private PantallaEquipo pantallaEquipo1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

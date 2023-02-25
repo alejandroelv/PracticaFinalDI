@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdministrador));
             this.buttonSalir = new System.Windows.Forms.Button();
             this.buttonCalendario = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             this.ClientSize = new System.Drawing.Size(314, 220);
             this.Controls.Add(this.buttonCalendario);
             this.Controls.Add(this.buttonSalir);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(330, 259);
             this.MinimizeBox = false;

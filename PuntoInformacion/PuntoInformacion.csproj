@@ -100,6 +100,12 @@
     <Compile Include="PantallaCalendario.Designer.cs">
       <DependentUpon>PantallaCalendario.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaEquipo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PantallaEquipo.Designer.cs">
+      <DependentUpon>PantallaEquipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="PantallaLugaresCercanos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,12 @@
     </Compile>
     <Compile Include="PantallaOfertaEducativa.Designer.cs">
       <DependentUpon>PantallaOfertaEducativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaPlanos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PantallaPlanos.Designer.cs">
+      <DependentUpon>PantallaPlanos.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaSugerencias.cs">
       <SubType>UserControl</SubType>
@@ -150,6 +162,9 @@
     <EmbeddedResource Include="PantallaCalendario.resx">
       <DependentUpon>PantallaCalendario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PantallaEquipo.resx">
+      <DependentUpon>PantallaEquipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaLugaresCercanos.resx">
       <DependentUpon>PantallaLugaresCercanos.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaOfertaEducativa.resx">
       <DependentUpon>PantallaOfertaEducativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaPlanos.resx">
+      <DependentUpon>PantallaPlanos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaSugerencias.resx">
       <DependentUpon>PantallaSugerencias.cs</DependentUpon>
@@ -242,6 +260,15 @@
     <None Include="Resources\mail-error.png" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="AxAcroPDFLib">
       <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -249,6 +276,7 @@
       <Lcid>0</Lcid>
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
   <ItemGroup>
@@ -259,6 +287,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plano_planta_baja.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plano_primera_planta.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plano_exterior.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planos_segunda_planta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directora.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jefe_estudios.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pastoral.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

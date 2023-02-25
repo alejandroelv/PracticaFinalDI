@@ -93,6 +93,16 @@ namespace PuntoInformacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap directora {
+            get {
+                object obj = ResourceManager.GetObject("directora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap engranaje {
             get {
                 object obj = ResourceManager.GetObject("engranaje", resourceCulture);
@@ -126,6 +136,16 @@ namespace PuntoInformacion.Properties {
         internal static System.Drawing.Bitmap geography {
             get {
                 object obj = ResourceManager.GetObject("geography", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jefe_estudios {
+            get {
+                object obj = ResourceManager.GetObject("jefe_estudios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +216,66 @@ namespace PuntoInformacion.Properties {
         internal static System.Drawing.Bitmap mail_error {
             get {
                 object obj = ResourceManager.GetObject("mail_error", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pas {
+            get {
+                object obj = ResourceManager.GetObject("pas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pastoral {
+            get {
+                object obj = ResourceManager.GetObject("pastoral", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plano_exterior {
+            get {
+                object obj = ResourceManager.GetObject("Plano_exterior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plano_planta_baja {
+            get {
+                object obj = ResourceManager.GetObject("Plano_planta_baja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plano_primera_planta {
+            get {
+                object obj = ResourceManager.GetObject("Plano_primera_planta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Planos_segunda_planta {
+            get {
+                object obj = ResourceManager.GetObject("Planos_segunda_planta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

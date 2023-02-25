@@ -175,4 +175,28 @@
   <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Plano_exterior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plano_exterior.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plano_planta_baja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plano_planta_baja.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plano_primera_planta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plano_primera_planta.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Planos_segunda_planta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Planos_segunda_planta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="directora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\directora.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jefe_estudios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jefe_estudios.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pas.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastoral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pastoral.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

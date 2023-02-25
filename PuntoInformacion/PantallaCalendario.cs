@@ -16,15 +16,15 @@ namespace PuntoInformacion
     public partial class PantallaCalendario : UserControl
     {
         String filepath;
+        public String archivoRuta { set; get; }
         public PantallaCalendario()
         {
             InitializeComponent();
-            cargarPDF();
         }
 
         private void leerRuta()
         {
-            string[] lines = File.ReadAllLines("../../rutaCalendario.txt");
+            string[] lines = File.ReadAllLines(archivoRuta);
             filepath = lines[0];
         }
         public void cargarPDF()

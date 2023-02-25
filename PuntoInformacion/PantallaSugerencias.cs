@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PuntoInformacion
 {
@@ -73,13 +64,12 @@ namespace PuntoInformacion
         }
         private void enviarMail()
         {
-            SmtpClient mailClient = new SmtpClient("smtp-mail.outlook.com");
+            SmtpClient mailClient = new SmtpClient("smtp.gmail.com");
 
             mailClient.Port = 587;
             mailClient.UseDefaultCredentials = false;
             mailClient.EnableSsl = true;
 
-            //Correo: sugerencias@cescristorey.com / Contraseña: 2DAM2021
             mailClient.Credentials = new System.Net.NetworkCredential("sugerencias@cescristorey.com", "2DAM2021");
 
             mailClient.Send(prepararMail());
